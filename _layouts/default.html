@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	{% include head.html %}
+</head>
+
+<body class="no-transition stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		{% include header_landingpage.html %}
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				{{ content }}
+
+			</div>
+
+		</section><!-- #content end -->
+
+		{% include footer.html %}
+
+	</div><!-- #wrapper end -->
+
+
+{% include script.html %}
+
+
+</body>
+</html>

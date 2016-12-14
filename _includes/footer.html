@@ -1,0 +1,111 @@
+<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap clearfix">
+
+					<div class="col_two_third">
+
+						<div class="col_one_third">
+
+							<div class="widget clearfix">
+
+								<img src="{{ site.url }}/images/logo_white.png" alt="" class="footer-logo">
+
+								
+								<div style="background: url('{{ site.url }}/images/world-map.png') no-repeat center center; background-size: 100%;">
+									<p>Top qualify Magento 2 extensions by Mageplaza. 30-day money back, trusted by thousands merchants and developers around the world.</p>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third">
+
+							<div class="widget widget_links clearfix">
+
+								<h4>Company</h4>
+
+								<ul>
+									<li><a href="https://www.mageplaza.com/about-us.html" rel="nofollow">Meet Mageplaza</a></li>
+									<li><a href="{{ site.url }}/privacy.html">Privacy</a></li>
+									<li><a href="{{ site.url }}/tos.html">TOS</a></li>
+									<li><a href="{{ site.url }}/contact.html">Contact us</a></li>
+								</ul>
+
+							</div>
+
+						</div>
+
+						<div class="col_one_third col_last">
+
+							<div class="widget widget_links clearfix">
+								<h4>Quick links</h4>
+								<ul>
+									<li><a href="https://www.mageplaza.com/magento-2-one-step-checkout-extension/">Magento 2 One Step Checkout</a></li>
+									<li><a href="https://www.mageplaza.com/magento-2-layered-navigation-extension/">Magento 2 Layered Navigation</a></li>
+									<li><a href="https://www.mageplaza.com/magento-2-affiliate-extension/">Magento 2 Affiliate</a></li>
+									<li><a href="https://www.mageplaza.com/magento-2-reward-points-extension/">Magento 2 Reward Points</a></li>
+									<li><a href="https://www.mageplaza.com/magento-2-gift-card-extension/">Magento 2 Gift Card</a></li>
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col_one_third col_last">
+						<div class="widget clearfix">
+								<h4>Recent Posts</h4>
+
+								<div id="post-list-footer">
+
+									{% for post in site.categories.blog limit:5 %}
+									<div class="spost clearfix">
+										<div class="entry-c">
+											<div class="entry-title">
+												<h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
+											</div>
+										</div>
+									</div>
+									{% endfor %}
+
+								</div>
+							</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyrights &copy; {{ site.time | date:"%Y" }} All Rights Reserved.<br>
+						<div class="copyright-links"><a href="{{ site.url }}/tos.html" rel="nofollow">Terms of Use</a> / <a href="{{ site.url }}/privacy.html" rel="nofollow">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="fright clearfix copyright-links">
+							<a href="https://www.mageplaza.com/magento-2-extensions/">Magento 2 extensions</a> / 
+							<a href="https://www.mageplaza.com/download-magento/">Download Magento 2</a> / 
+						</div>
+
+						<div class="clear"></div>
+
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->

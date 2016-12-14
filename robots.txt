@@ -1,0 +1,15 @@
+---
+layout: null
+---
+User-Agent: *
+Disallow: /wp-admin
+Disallow: /wp-content/
+
+{% if site.allow_search_engine == "false" %}
+User-Agent: *
+Disallow: /
+Disallow: /*
+
+{% endif %}
+
+Sitemap: {{ site.url }}/sitemap.xml

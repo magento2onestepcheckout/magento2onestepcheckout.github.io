@@ -1,0 +1,49 @@
+<div class="sidebar-widgets-wrap">
+
+
+	<div class="widget clearfix">
+		{% include ad_sidebar_top.html %}
+	</div>
+
+
+	<div class="widget clearfix">
+
+		<h4>Recent Posts</h4>
+		<div id="post-list-footer">
+
+			{% for post in site.categories.blog limit:5 %}
+			<div class="spost clearfix">
+				<div class="entry-c">
+					<div class="entry-title">
+						<h5><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h5>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+
+
+		</div>
+
+	</div>
+
+	<div class="widget widget_links clearfix">
+
+		<h4>Pages</h4>
+		<ul>
+			{% for page in site.pages limit:5 %}
+			<li><a href="{{ site.url }}{{ page.url }}"><div>{{ page.title }}</div></a></li>
+			{% endfor %}
+		</ul>
+
+	</div>
+
+
+	
+
+	<div class="widget clearfix">
+
+		{% include ad_sidebar_bottom.html %}
+
+	</div>
+
+</div>
